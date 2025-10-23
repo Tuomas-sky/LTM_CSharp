@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections.Generic;//泛型
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using MyClassLib;
 //Add ref Windows.Forms 
 namespace LTM_ClassAndInstance
 {
@@ -210,10 +210,120 @@ namespace LTM_ClassAndInstance
             //subject.State = 1;
 #endif
 
+            //MyClassLib 引用，OOP，interface
+#if false
+            ////17.引用MyClassLib
+            //MyClassLib.MyNamespace.Calculator calc = new MyClassLib.MyNamespace.Calculator();
+            //Console.WriteLine(calc.Add(1, 2));
+
+            ////18.OOP---可见的签名一致的函数成员
+            //Type t = typeof(Car);
+            //Console.WriteLine(t.BaseType.FullName);
+            //Console.WriteLine(t.BaseType.BaseType.FullName);
+            //Car car = new Car();
+            //Console.WriteLine(car is Vehical);
+            ////car.ShowOwner();
+            //car.Refuel(100);
+            //car.Acculerate();
+            //Console.WriteLine(car.Speed);
+            //car.TurboAcc();
+            //Console.WriteLine(car.Speed);
+            //Vehical v = new Car();//多态（子类只有一个版本），与引用的实例类型有关；
+            //                      //如果不是多态（子类有两个版本），则调用父类的方法（子类中同时用于子类和父类的Run()方法）
+            //v.Run();//调用子类重写的方法
+            //Console.WriteLine(v.PolySpeed);
+            //Vehical v2 = new Vehical();
+            //v2.Run();
+            //Console.WriteLine(v2.PolySpeed);
+
+            //RaceCar raceCar = new RaceCar();
+            //raceCar.GetType();
+
+            //引出接口
+            //Vehical v1 = new Car();
+            //v1.Run();
+#endif
+            //19.引用MyClassLib 泛型--泛型类
+            Apple apple = new Apple() { Color = "Red" };
+            Book book = new Book() { Name = "C# Programming" };
+            Box<Apple> appleBox = new Box<Apple>() { Cargo = apple };
+            Box<Book> bookBox = new Box<Book>() { Cargo = book };
+            Console.WriteLine(appleBox.Cargo.Color);
+            Console.WriteLine(bookBox.Cargo.Name);
+
+            //20.引用MyClassLib 泛型--泛型接口
+            Student1<int> stu1 = new Student1<int>() { Id = 1001, Name = "Tom" };
+            Console.WriteLine("stu1.Id={0},stu2.Name={1}", stu1.Id, stu1.Name);
+            Student2 stu2 = new Student2() { Id = 2001, Name = "Mary" };
+            Console.WriteLine("stu2.Id={0},stu2.Name={1}", stu2.Id, stu2.Name);
+
+            //21. .Net 内置泛型集合，泛型--数据结构
+            IList<int> list = new List<int>();
+            for (int i = 1; i <= 5; i++)
+            {
+                list.Add(i);    
+            }
+            foreach (var item in list)
+            {
+                Console.Write(item+" ");
+            }
+            Console.WriteLine();
+            IDictionary<int,string> dict =new Dictionary<int,string>();
+            dict.Add(1, "One");
+            dict.Add(2, "Two");
+            Console.WriteLine("# 1 is {0}",dict[1]);
+            Console.WriteLine("# 2 is {0}", dict[1]);
+
+            //22.泛型--算法
+            int[] arr1 = new int[] { 1, 3, 5, 7, 9 };
+            int[] arr2 = new int[] { 2, 4, 6, 8, 10 };
+            int[] zip = Zipped(arr1, arr2);
+            Console.WriteLine("Zipped Array:");
+            foreach (var item in zip)
+            {
+                Console.Write(item + " ");
+            }
+            double[] d1 = new double[] { 1.1, 3.3, 5.5 };
+            double[] d2 = new double[] { 2.2, 4.4, 6.6, 8.8 };
+            double[] zipd = Zipped(d1, d2);
+            Console.WriteLine("\nZipped Double Array:");
+            foreach (var item in zipd)
+            {
+                Console.Write(item + " ");
+            }
+            Console.WriteLine();
+
+            //23.泛型--泛型委托 Action & Func
+            GenericMethod gm = new GenericMethod();
+            Action<string> str = gm.ShowMsg;
+            Func<int,int,int> multiply = gm.Multiply;
+            str("Program");
+            Func<double, double, double> add = (x, y) => x + y;
+            Console.WriteLine(multiply(10,20));
+            Console.WriteLine(add(100,200));
+
+
 
 
         }
-
+        //泛型方法
+        static T[] Zipped<T>(T[] a, T[] b)
+        {
+            T[] zip = new T[a.Length+b.Length];
+            int z = 0, x = 0, y = 0;
+            do
+            {
+                if (x < a.Length)
+                {
+                    zip[z++] = a[x++];
+                }
+                if (y < b.Length)
+                {
+                    zip[z++] = b[y++];
+                }
+            } while (x < a.Length || y < b.Length);
+            return zip;
+        }
     }
 
     //扩展方法

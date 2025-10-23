@@ -66,14 +66,14 @@ namespace LTM_Delegate
             //Console.WriteLine(pizzaBox.Product.Name);
             //Console.WriteLine(toyBox.Product.Name);
             //Console.WriteLine("-------------------");
-            //3.3 使用接口简化回调函数的使用（不使用委托）
-            WarpFactory warpFactory = new WarpFactory();
-            PizzaFactory pizzaFactory = new PizzaFactory();
-            ToyFactory toyFactory = new ToyFactory();
-            Box pizzaBox = warpFactory.WarpProdect(pizzaFactory);
-            Box toyBox = warpFactory.WarpProdect(toyFactory);
-            Console.WriteLine(pizzaBox.Product.Name);
-            Console.WriteLine(toyBox.Product.Name);
+            ////3.3 使用接口简化回调函数的使用（不使用委托）
+            //WarpFactory warpFactory = new WarpFactory();
+            //IProductFactory pizzaFactory = new PizzaFactory();
+            //IProductFactory toyFactory = new ToyFactory();
+            //Box pizzaBox = warpFactory.WarpProdect(pizzaFactory);
+            //Box toyBox = warpFactory.WarpProdect(toyFactory);
+            //Console.WriteLine(pizzaBox.Product.Name);
+            //Console.WriteLine(toyBox.Product.Name);
 
             ////4.多播委托
             //StudentPen stu1 = new StudentPen() { ID = 1, PenColor = ConsoleColor.Red };
