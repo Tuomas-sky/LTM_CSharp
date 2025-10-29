@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("TLM_Event")]
+[assembly: AssemblyTitle("LTM_Interface_SOLID")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("TLM_Event")]
+[assembly: AssemblyProduct("LTM_Interface_SOLID")]
 [assembly: AssemblyCopyright("Copyright ©  2025")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("3d8b18bd-e760-4ed0-89f4-7898d9d8e27f")]
+[assembly: Guid("d244720f-424d-4c9f-89f7-19e97578b4a5")]
 
 // 程序集的版本信息由下列四个值组成: 
 //

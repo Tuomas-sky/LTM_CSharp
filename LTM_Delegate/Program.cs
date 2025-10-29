@@ -9,23 +9,27 @@ namespace LTM_Delegate
 {
     //声明委托
     delegate int Calc(int a, int b);
-//    委托的一般使用
-//1.实例：把方法当作参数传给另一个方法
-//正确使用1：模板方法，"借用"指定的外部方法来产生结果
-//相当于"填空题"
-//常位于---代码中部
-//委托有返回值
-//正确使用2：回调（callback）方法，调用指定的外部方法
-//相当于"流水线”
-//常位于---代码末尾
-//委托无返回值
-//2.注意：难精通+易使用+功能强大东西，一旦被滥用则后果非常严重
-//缺点1：这是一种方法级别的紧耦合，现实工作中要慎之又慎
-//缺点2：使可读性下降、debug的难度增加
-//缺点3：把委托回调、异步调用和多线程纠缠在一起，会让代码变得难以阅读和维护
-//缺点4：委托使用不当有可能造成内存泄漏和程序性能下降
+    //    委托的一般使用
+    //1.实例：把方法当作参数传给另一个方法
+    //正确使用1：模板方法，"借用"指定的外部方法来产生结果
+    //相当于"填空题"
+    //常位于---代码中部
+    //委托有返回值
+    //正确使用2：回调（callback）方法，调用指定的外部方法
+    //相当于"流水线”
+    //常位于---代码末尾
+    //委托无返回值
+    //2.注意：难精通+易使用+功能强大东西，一旦被滥用则后果非常严重
+    //缺点1：这是一种方法级别的紧耦合，现实工作中要慎之又慎
+    //缺点2：使可读性下降、debug的难度增加
+    //缺点3：把委托回调、异步调用和多线程纠缠在一起，会让代码变得难以阅读和维护
+    //缺点4：委托使用不当有可能造成内存泄漏和程序性能下降
     internal class Program
     {
+        static string ProcessData(string str, Func<string, string> func1, Func<string, string> func2)
+        {
+            return func2(func1(str));
+        }
         static void Main(string[] args)
         {
 
@@ -123,7 +127,20 @@ namespace LTM_Delegate
             //    System.Threading.Thread.Sleep(500);
             //}
 
-
-        }
+            //6.回调函数与高阶函数的实际应用
+            //6.1 异步编程中的回调(用于异步编程和事件驱动场景)
+            //Action<int, int> asyncCallback = (int x, int y) =>
+            //{
+            //    Console.WriteLine($"process {x} and {y}");
+            //    //Thread.Sleep(20); // 模拟耗时操作
+            //    Console.WriteLine($"add calculate result={x+y}");
+            //};
+            //asyncCallback.BeginInvoke(10, 20, result=>{ Console.WriteLine("Async oprate finished!"); },null);
+            //Console.WriteLine("Main thread start async operation.");
+            //6.2 高阶函数中的回调(pipline，可将多个功能模块化，进行复杂的数据处理)
+            //string str = "hello world";
+            //string data = ProcessData(str, str1 => str1.ToUpper(), str2 => new String(str2.Reverse().ToArray()));
+            //Console.WriteLine(data);
+        } 
     }
 }

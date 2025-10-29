@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3D8B18BD-E760-4ED0-89F4-7898D9D8E27F}</ProjectGuid>
+    <ProjectGuid>{D244720F-424D-4C9F-89F7-19E97578B4A5}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TLM_Event</RootNamespace>
-    <AssemblyName>TLM_Event</AssemblyName>
+    <RootNamespace>LTM_Interface_SOLID</RootNamespace>
+    <AssemblyName>LTM_Interface_SOLID</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interface.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
