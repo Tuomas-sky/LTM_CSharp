@@ -22,6 +22,23 @@ namespace LTM_Interface_SOLID
             //var userPhone2 = new UserPhone(new XiaomiPhone());
             //userPhone2.UsePhone();
 
+            ////3、依赖反转DIP
+            //Customer customer = new Customer();
+            //Waiter waiter = new Waiter();
+            //customer.Order += waiter.Server;
+            //customer.Action();
+            //customer.Payfor();
+
+            //4、接口隔离原则
+            var wk = new WarmKiller();
+            wk.Love();
+            //显示调用
+            //IKiller killer= wk as IKiller;
+            IKiller killer =new WarmKiller();
+            killer.Kill();
+
         }
+
+
     }
 }
