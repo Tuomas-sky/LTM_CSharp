@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("LTM_Reflection")]
+[assembly: AssemblyTitle("CSharpe_oop_base01")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("LTM_Reflection")]
+[assembly: AssemblyProduct("CSharpe_oop_base01")]
 [assembly: AssemblyCopyright("Copyright ©  2025")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("d8646db0-2cee-4a86-ab2b-bad5b688520e")]
+[assembly: Guid("74b0a605-aca0-40c6-ac69-24f0e1c8840f")]
 
 // 程序集的版本信息由下列四个值组成: 
 //

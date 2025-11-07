@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LTM_Reflection
+namespace LTM_Reflect
 {
     internal class Reflection
     {
@@ -23,17 +23,18 @@ namespace LTM_Reflection
             _vehical.Run();
         }
     }
-    public interface IVehical { 
+    public interface IVehical
+    {
         void Run();
     }
     public interface IWeapon
     {
         void Fire();
     }
-    public interface ITank:IVehical,IWeapon
+    public interface ITank : IVehical, IWeapon
     {
     }
-    public class  Car:IVehical
+    public class Car : IVehical
     {
         public void Run()
         {
@@ -72,8 +73,8 @@ namespace LTM_Reflection
     }
 
     //2、依赖注入
-    
 
+    //4、反射加载插件
 
 
 
