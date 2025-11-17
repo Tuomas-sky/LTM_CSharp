@@ -23,7 +23,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animals.SDK", "Animals.SDK\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06LTM_DataStruct", "06LTM_DataStruct\06LTM_DataStruct.csproj", "{962EA737-4E8B-4846-966C-82D9FEBF132F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpe_oop_base01", "CSharpe_oop_base01\CSharpe_oop_base01.csproj", "{74B0A605-ACA0-40C6-AC69-24F0E1C8840F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZD_CS_oop_base01", "CSharpe_oop_base01\ZD_CS_oop_base01.csproj", "{74B0A605-ACA0-40C6-AC69-24F0E1C8840F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
