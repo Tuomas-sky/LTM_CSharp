@@ -1,0 +1,48 @@
+﻿<Window x:Class="WPF_Story_02_Style_ControlTemplate.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Story_02_Style_ControlTemplate"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <!--方式1-->
+    <!--<Window.Resources>
+        <SolidColorBrush x:Key="PresetColor_1" Color="#05E0E9"/>
+        <SolidColorBrush x:Key="PresetColor_2" Color="#878787"/>
+    </Window.Resources>-->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="0.5*"/>
+        </Grid.ColumnDefinitions>
+    <!--静态资源-->
+        <!--<Border Grid.Row="0" Grid.Column="0" Background="{StaticResource PresetColor_1}"/>
+        <Border Grid.Row="0" Grid.Column="1" Background="{StaticResource PresetColor_2}"/>
+        <Border Grid.Row="1" Grid.Column="1" Background="{StaticResource PresetColor_1}"/>
+        <Border Grid.Row="1" Grid.Column="0" Background="{StaticResource PresetColor_2}"/>-->
+      <!--动态资源-->
+        <Border Grid.Row="0" Grid.Column="0" Background="{DynamicResource PresetColor_1}"/>
+        <Border Grid.Row="0" Grid.Column="1" Background="{DynamicResource PresetColor_2}"/>
+        <Border Grid.Row="1" Grid.Column="1" Background="{DynamicResource PresetColor_1}"/>
+        <Border Grid.Row="1" Grid.Column="0" Background="{DynamicResource PresetColor_2}"/>
+        <StackPanel Grid.Row="0" Grid.Column="1">
+            <Button Content="ColorStyle1" Margin="15"
+                    FontSize="24" Click="CS1_Click"/>
+            <Button Content="ColorStyle2" Margin="15"
+                    FontSize="24" Click="CS2_Click"/>
+        </StackPanel>
+
+        <!--Window.Resources的三种管理方式-->
+        <!--方式1、直接在窗口对应的 xaml 中定义资源-->
+        <!--方式2、在 App.xaml 中定义资源-->
+        <!--方式3、创建文件夹并创建内容元素为ResourceDictionary的xaml页面，可以将资源分组和模块化，方便管理和维护-->
+        
+        
+        
+    </Grid>
+</Window>

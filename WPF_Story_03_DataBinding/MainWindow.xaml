@@ -1,0 +1,35 @@
+﻿<Window x:Class="WPF_Story_03_DataBinding.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Story_03_DataBinding"
+        mc:Ignorable="d"
+        Title="Adding Calculator" Height="200" Width="500">
+    <!--DataBinding-->
+    <!--<StackPanel>
+        <TextBox x:Name="InputTextBox" Margin="10" 
+                 FontSize="16" FontFamily="Arial"/>
+        <Button FontSize="16" FontFamily="Arial"
+                Width="80" Margin="10"
+                Content="Output" Click="Button_Click"/>
+        <TextBox x:Name="OutputTextBox" Margin="10"
+                 FontSize="16" FontFamily="Arial"/>
+
+        <Button FontSize="16" FontFamily="Arial"
+                Width="140" Margin="10"
+                Content="NameToAmy" Click="NameToAmy_Click" />
+
+    </StackPanel>-->
+    
+    <!--ObjectDataProvider-->
+    <StackPanel Background="LightBlue">
+        <TextBox x:Name="Para1_TextBox" Margin="5"/>
+        <TextBox x:Name="Para2_TextBox" Margin="5"/>
+        <Button Content="Add" Margin="5" Click="Button_Click"/>
+        <Label Content="Sum:" Margin="5"/>
+        <TextBox x:Name="Outcome_TextBox" Margin="5,0"/>
+    </StackPanel>
+    
+    
+</Window>
