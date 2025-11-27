@@ -1,0 +1,18 @@
+﻿<Window x:Class="WPF_Story_04_DependencyProperty.dp_Attach"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Story_04_DependencyProperty"
+        mc:Ignorable="d"
+        Title="dp_Attach" Height="450" Width="800">
+    <!--附加是一种特殊的依赖属性。附加属性是说，一个属性本来不属于某个对象，但是由于某种需求而被后来附加上，
+    也就是把对象放入一个特定环境之后才具有的属性，表现出来的就是被环境赋予的属性，这个就称为附加属性。
+    它允许给一个对象添加一个值，而该对象可能对这个值一无所知。-->
+    <StackPanel>
+        <Canvas>
+            <TextBox Width="100" Background="AliceBlue" Canvas.Left="50"/>
+            <TextBox Width="100" Background="Orange" Canvas.Top="50"/>
+        </Canvas>
+    </StackPanel>
+</Window>

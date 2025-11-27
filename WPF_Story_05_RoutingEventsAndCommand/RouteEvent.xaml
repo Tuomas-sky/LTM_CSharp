@@ -1,0 +1,57 @@
+﻿<Window x:Class="WPF_Story_05_RoutingEventsAndCommand.RouteEvent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Story_05_RoutingEventsAndCommand"
+        mc:Ignorable="d"
+        Title="RouteEvent" Height="450" Width="800">
+    <!--WPF系统中大多数的事件都是可路由事件，WPF亦可以支持直接事件机制。-->
+    <!--使用多层嵌套的形式去设置两个Button，留意为第一个Grid对象和
+    左边的Canvas对象以及两个按钮的Content属性值，在后置代码中通过名称调用到对应的元素上。-->
+    <Grid x:Name="baseGrid">
+        <Border>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Border Background="LawnGreen" Margin="30">
+                    <Canvas x:Name="leftCanvas">
+                        <Button x:Name="LeftButton"
+                                FontFamily="Arial"
+                                FontSize="40"
+                                Height="240"
+                                Width="140"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Top"
+                                Content="Left"
+                                Canvas.Left="100"
+                                Canvas.Top="67"
+                                >
+                        </Button>
+                    </Canvas>
+                </Border>
+
+                <Border Background="Pink" Grid.Column="1" Margin="30">
+                    <Canvas x:Name="rightCanvas">
+                        <Button x:Name="RightButton"
+                                FontFamily="Arial"
+                                FontSize="40"
+                                Height="240"
+                                Width="140"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Top"
+                                Content="Right"
+                                Canvas.Left="100"
+                                Canvas.Top="67"
+                                >
+                        </Button>
+                    </Canvas>
+                </Border>
+                
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

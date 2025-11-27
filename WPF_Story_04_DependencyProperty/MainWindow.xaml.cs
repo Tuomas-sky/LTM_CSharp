@@ -23,7 +23,17 @@ namespace WPF_Story_04_DependencyProperty
         public MainWindow()
         {
             InitializeComponent();
+            //SetValue(counterKey, 10);//内部使用SetValue来设置值
         }
+
+
+        //只读依赖属性
+        public int Counter
+        {
+            get { return (int)GetValue(counterKey.DependencyProperty); }
+        }
+        public static readonly DependencyPropertyKey counterKey = DependencyProperty.RegisterReadOnly("Counter",typeof(int),typeof(MainWindow),new PropertyMetadata(0));
+
     }
 
     public class Student1:DependencyObject {
@@ -35,7 +45,7 @@ namespace WPF_Story_04_DependencyProperty
             set { name = value; }
         }
 
-        //依赖属性
+        //自定义依赖属性
         //注册依赖属性（para1:CLR属性，para2:属性类型，para3:宿主类型，para4():其他功能（包括继承，回调，绑定等），para5:校验功能）
         public static readonly DependencyProperty GradeProperty
             = DependencyProperty.Register("Grade", typeof(int), typeof(Student1));
@@ -45,12 +55,15 @@ namespace WPF_Story_04_DependencyProperty
             get { return (int)GetValue(GradeProperty); }
             set { SetValue(GradeProperty, value);}
         }
+
+
     }
 
+    //附加属性
     public class AttachPropertyClass { 
         //通过使用RegisterAttached来注册一个附加属性
         public static readonly DependencyProperty IsAttachedProperty
-            =DependencyProperty.RegisterAttached("IaAttached",typeof(bool),typeof(AttachPropertyClass));
+            =DependencyProperty.RegisterAttached("IaAttached",typeof(bool),typeof(AttachPropertyClass),new FrameworkPropertyMetadata((bool)false));
          //通过静态方法的形式暴露读操作
         public static bool GetIsAttached(DependencyObject dpo)
         {

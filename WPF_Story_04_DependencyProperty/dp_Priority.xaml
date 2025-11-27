@@ -1,0 +1,19 @@
+﻿<Window x:Class="WPF_Story_04_DependencyProperty.dp_Priority"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Story_04_DependencyProperty"
+        mc:Ignorable="d"
+        Title="dp_Priority" Height="450" Width="800">
+    <!--依赖属性的优先级-->
+    <StackPanel>
+        <StackPanel.Resources>
+            <Style x:Key="{x:Type Button}" TargetType="{x:Type Button}">
+                <Setter Property="Background" Value="Orange"/>
+            </Style>
+        </StackPanel.Resources>
+        <Button Content="button_1"/>
+        <Button Content="button_2" Background="Pink"/>
+    </StackPanel>
+</Window>
