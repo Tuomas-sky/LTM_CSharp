@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WPF_Story_05_RoutingEventsAndCommand
+namespace WPF_Story_05_RoutingEvent
 {
     /// <summary>
     /// MainWindow.xaml 的交互逻辑

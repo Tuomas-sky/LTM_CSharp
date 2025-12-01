@@ -1,0 +1,14 @@
+﻿<Window x:Class="WPF_Story_06_Commands.one_ClearTextBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Story_06_Commands"
+        mc:Ignorable="d"
+        Title="one_ClearTextBox" Height="180" Width="440">
+    <!--定义一个命令，使用Button来发送这个命令，当命令到达TextBox时清空TextBox中的内容，若TextBox中没有文字，则命令不可被发送。-->
+    <StackPanel x:Name="stackPanel">
+        <Button x:Name="button" Content="Send Clear Command" Margin="5"/>
+        <TextBox x:Name="textBox" Margin="5,0" Height="100"/>
+    </StackPanel>
+</Window>

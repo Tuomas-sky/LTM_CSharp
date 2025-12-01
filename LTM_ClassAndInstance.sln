@@ -33,7 +33,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Story_03_DataBinding", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Story_04_DependencyProperty", "WPF_Story_04_DependencyProperty\WPF_Story_04_DependencyProperty.csproj", "{FF124B24-D246-4701-B0AA-2F6DEEC4A271}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Story_05_RoutingEventsAndCommand", "WPF_Story_05_RoutingEventsAndCommand\WPF_Story_05_RoutingEventsAndCommand.csproj", "{00C52256-C628-4C13-BCE1-BD840D796FB8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Story_05_RoutingEvents", "WPF_Story_05_RoutingEvents\WPF_Story_05_RoutingEvents.csproj", "{00C52256-C628-4C13-BCE1-BD840D796FB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Story_06_Commands", "WPF_Story_06_Commands\WPF_Story_06_Commands.csproj", "{013CBC14-EB69-4D60-A309-899B858525E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Story_07_MVVM_Self_Command", "WPF_Story_07_MVVM_Self_Command\WPF_Story_07_MVVM_Self_Command.csproj", "{70735F14-5813-4325-AA51-E1CAA256E6B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -171,6 +175,22 @@ Global
 		{00C52256-C628-4C13-BCE1-BD840D796FB8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{00C52256-C628-4C13-BCE1-BD840D796FB8}.Release|x64.ActiveCfg = Release|Any CPU
 		{00C52256-C628-4C13-BCE1-BD840D796FB8}.Release|x64.Build.0 = Release|Any CPU
+		{013CBC14-EB69-4D60-A309-899B858525E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{013CBC14-EB69-4D60-A309-899B858525E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{013CBC14-EB69-4D60-A309-899B858525E2}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{013CBC14-EB69-4D60-A309-899B858525E2}.Debug|x64.Build.0 = Debug|Any CPU
+		{013CBC14-EB69-4D60-A309-899B858525E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{013CBC14-EB69-4D60-A309-899B858525E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{013CBC14-EB69-4D60-A309-899B858525E2}.Release|x64.ActiveCfg = Release|Any CPU
+		{013CBC14-EB69-4D60-A309-899B858525E2}.Release|x64.Build.0 = Release|Any CPU
+		{70735F14-5813-4325-AA51-E1CAA256E6B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70735F14-5813-4325-AA51-E1CAA256E6B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70735F14-5813-4325-AA51-E1CAA256E6B7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{70735F14-5813-4325-AA51-E1CAA256E6B7}.Debug|x64.Build.0 = Debug|Any CPU
+		{70735F14-5813-4325-AA51-E1CAA256E6B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70735F14-5813-4325-AA51-E1CAA256E6B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70735F14-5813-4325-AA51-E1CAA256E6B7}.Release|x64.ActiveCfg = Release|Any CPU
+		{70735F14-5813-4325-AA51-E1CAA256E6B7}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

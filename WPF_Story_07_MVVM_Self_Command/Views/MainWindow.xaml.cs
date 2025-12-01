@@ -10,16 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WPF_Story_05_RoutingEventsAndCommand
+namespace WPF_Story_07_MVVM_Self_Command
 {
     /// <summary>
-    /// AttachEvent.xaml 的交互逻辑
+    /// MainWindow.xaml 的交互逻辑
     /// </summary>
-    public partial class AttachEvent : Window
+    public partial class MainWindow : Window
     {
-        public AttachEvent()
+        public MainWindow()
         {
             InitializeComponent();
         }

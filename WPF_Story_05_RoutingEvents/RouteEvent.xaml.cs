@@ -15,7 +15,7 @@ using System.Windows.Shapes;
 //路由事件：为了实现事件在元素树中的传播
 //附加事件：为了让实现界面上不可见的类与其他控件之间进行通信
 
-namespace WPF_Story_05_RoutingEventsAndCommand
+namespace WPF_Story_05_RoutingEvent
 {
     /// <summary>
     /// RouteEvent.xaml 的交互逻辑

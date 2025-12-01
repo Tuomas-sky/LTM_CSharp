@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WPF_Story_05_RoutingEventsAndCommand.Properties
+namespace WPF_Story_05_RoutingEvent.Properties
 {
 
 
@@ -44,7 +44,7 @@ namespace WPF_Story_05_RoutingEventsAndCommand.Properties
             {
                 if ((resourceMan == null))
                 {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("WPF_Story_05_RoutingEventsAndCommand.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("WPF_Story_05_RoutingEvent.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

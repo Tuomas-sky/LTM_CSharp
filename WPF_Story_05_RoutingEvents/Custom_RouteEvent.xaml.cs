@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace WPF_Story_05_RoutingEventsAndCommand
+namespace WPF_Story_05_RoutingEvent
 {
     /// <summary>
     /// Custom_RouteEvent.xaml 的交互逻辑

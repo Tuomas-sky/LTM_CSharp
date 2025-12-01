@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WPF_Story_05_RoutingEventsAndCommand.Properties
+namespace WPF_Story_06_Commands.Properties
 {
 
 

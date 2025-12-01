@@ -1,9 +1,9 @@
-﻿<Window x:Class="WPF_Story_05_RoutingEventsAndCommand.RouteEvent"
+﻿<Window x:Class="WPF_Story_05_RoutingEvent.RouteEvent"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WPF_Story_05_RoutingEventsAndCommand"
+        xmlns:local="clr-namespace:WPF_Story_05_RoutingEvent"
         mc:Ignorable="d"
         Title="RouteEvent" Height="450" Width="800">
     <!--WPF系统中大多数的事件都是可路由事件，WPF亦可以支持直接事件机制。-->

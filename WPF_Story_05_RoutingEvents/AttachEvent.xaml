@@ -1,0 +1,18 @@
+﻿<Window x:Class="WPF_Story_05_RoutingEvent.AttachEvent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Story_05_RoutingEvent"
+        mc:Ignorable="d"
+        Title="AttachEvent" Height="450" Width="800">
+    <!--希望实现，当修改Staff对象的Salary时，附加事件SalaryChangeEvent能够借助XAML界面中的Button进行路由传播-->
+    <Grid x:Name="BaseGrid">
+        <Button x:Name="AttachButton"
+                Content="Changed"
+                Width="80"
+                Height="40"
+                Click="AttachButton_Click"/>
+
+    </Grid>
+</Window>
