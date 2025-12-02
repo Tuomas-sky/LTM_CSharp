@@ -1,12 +1,60 @@
-﻿<Window x:Class="WPF_Story_07_MVVM_Self_Command.MainWindow"
+﻿<Window x:Class="WPF_Story_07_MVVM_Self_Command.Views.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_Story_07_MVVM_Self_Command"
+        xmlns:controls="clr-namespace:WPF_Story_07_MVVM_Self_Command.Controls"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Input HEX Color: "
+               Grid.Row="0"
+               Margin="10"
+               FontFamily="Arial"
+               FontSize="16"
+               VerticalContentAlignment="Center"/>
+
+        <TextBox x:Name="textBox"
+                 Grid.Row="1"
+                 Margin="10"
+                 FontFamily="Arial"
+                 FontSize="16"
+                 VerticalContentAlignment="Center"/>
         
+        <controls:ColorControlButton Grid.Row="2"
+                                  x:Name="fillButton"
+                                  Content="Fill"
+                                  Command="{Binding FillCommand}"
+                                  CommandTarget="{Binding ElementName=colorBorder}"
+                                  CommandParameter="{Binding Path=Text, ElementName=textBox}"
+                                  Margin="10"
+                                  FontSize="16"
+                                  FontFamily="Arial"
+                                  VerticalContentAlignment="Center" />
+        <controls:ColorControlButton Grid.Row="3"
+                                  x:Name="clearButton"
+                                  Command="{Binding ClearCommand}"
+                                  CommandTarget="{Binding ElementName=colorBorder}"
+                                  Content="Clear"
+                                  Margin="10"
+                                  FontSize="16"
+                                  FontFamily="Arial"
+                                  VerticalContentAlignment="Center" />
+        <controls:ColorBorder 
+            Grid.Row="4"
+            x:Name="colorBorder"
+            BorderThickness="1"
+            BorderBrush="Black"
+            Margin="10" />
+
     </Grid>
 </Window>
