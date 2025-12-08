@@ -7,10 +7,10 @@ using System.Windows;
 using System.Windows.Input;
 using System.Windows.Media;
 
-namespace WPF_Story_07_MVVM_Self_Command.Commands
-{
+namespace WPF_Story_07_MVVM_Self_Command.Commands{
     public class FillCommand : ICommand
     {
+
         //事件：当命令的可执行状态发生改变时，应该被激发
         public event EventHandler CanExecuteChanged
         {
@@ -50,5 +50,6 @@ namespace WPF_Story_07_MVVM_Self_Command.Commands
                 }
             }
         }
+
     }
 }

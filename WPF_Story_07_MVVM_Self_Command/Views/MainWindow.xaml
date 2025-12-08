@@ -6,8 +6,9 @@
         xmlns:local="clr-namespace:WPF_Story_07_MVVM_Self_Command"
         xmlns:controls="clr-namespace:WPF_Story_07_MVVM_Self_Command.Controls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="400">
+        Title="MainWindow" Height="450" Width="800">
     <Grid>
+
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
             <RowDefinition Height="50"/>
@@ -16,18 +17,19 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Label Content="Input HEX Color:"
+        <Label Content="Input HEX Color: "
+               Grid.Row="0"
                Margin="10"
-               FontSize="16"
                FontFamily="Arial"
+               FontSize="16"
                VerticalContentAlignment="Center"/>
 
-        <TextBox Grid.Row="1"
-                 x:Name="textBox"
+        <TextBox x:Name="textBox"
+                 Grid.Row="1"
                  Margin="10"
+                 FontFamily="Arial"
                  FontSize="16"
                  VerticalContentAlignment="Center"/>
-        
         
         <controls:ColorControlButton Grid.Row="2"
                                   x:Name="fillButton"
@@ -48,12 +50,13 @@
                                   FontSize="16"
                                   FontFamily="Arial"
                                   VerticalContentAlignment="Center" />
-        <controls:ColorBorder Grid.Row="4"
-                x:Name="colorBorder"
-                BorderThickness="1"
-                BorderBrush="Black"
-                Margin="10" />
-        
+        <controls:ColorBorder 
+            Grid.Row="4"
+            x:Name="colorBorder"
+            BorderThickness="1"
+            BorderBrush="Black"
+            Margin="10" />
+
 
 
     </Grid>

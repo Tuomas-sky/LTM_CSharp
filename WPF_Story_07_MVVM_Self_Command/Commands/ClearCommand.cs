@@ -9,6 +9,7 @@ namespace WPF_Story_07_MVVM_Self_Command.Commands
 {
     public class ClearCommand : ICommand
     {
+
         public event EventHandler CanExecuteChanged;
 
         public bool CanExecute(object parameter)
@@ -23,5 +24,6 @@ namespace WPF_Story_07_MVVM_Self_Command.Commands
                 colorable.Clear();
             }
         }
+
     }
 }

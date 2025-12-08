@@ -11,6 +11,8 @@ namespace WPF_Story_07_MVVM_Self_Command.Controls
 {
     public class ColorBorder : Border, IColorable
     {
+
+
         //当前颜色属性及依赖属性
         public Color CurrentColor
         {
