@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+
+	<Company Name="Microsoft">
+		<Dempartment Name="Windows">
+			<Employee Name="Bill Gates"/>
+			<Employee Name="Satya Nadella"/>
+		</Dempartment>
+		<Dempartment Name="Azure">
+			<Employee Name="Scott Guthrie"/>
+			<Employee Name="Mark Russinovich"/>
+		</Dempartment>
+	</Company>
+
+	<Company Name="Google">
+		<Dempartment Name="Search">
+			<Employee Name="Sundar Pichai"/>
+			<Employee Name="Larry Page"/>
+		</Dempartment>
+		<Dempartment Name="YouTube">
+			<Employee Name="Susan Wojcicki"/>
+			<Employee Name="PewDiePie"/>
+		</Dempartment>
+	</Company>
+
+</root>

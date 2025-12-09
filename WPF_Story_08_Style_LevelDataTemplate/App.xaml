@@ -1,0 +1,62 @@
+﻿<Application x:Class="WPF_Story_08_Style_LevelDataTemplate.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WPF_Story_08_Style_LevelDataTemplate"
+             StartupUri="MainWindow.xaml">
+    <!--<Application.Resources>
+        <HierarchicalDataTemplate DataType="{x:Type local:CompanyData}"
+                                  ItemsSource="{Binding Path=DepartmentDatas}">
+            <TextBlock Text="{Binding Name}"/>
+        </HierarchicalDataTemplate>
+
+        <HierarchicalDataTemplate DataType="{x:Type local:DepartmentData}"
+                                  ItemsSource="{Binding Path=EmployeeDatas}">
+            <RadioButton Content="{Binding Name}"/>
+        </HierarchicalDataTemplate>
+
+        <HierarchicalDataTemplate DataType="{x:Type local:EmployeeData}"
+                                  >
+            <CheckBox Content="{Binding Name}"/>
+        </HierarchicalDataTemplate>
+    </Application.Resources>-->
+    
+    <!--xml-->
+    <Application.Resources>
+        <XmlDataProvider x:Key="xdp"
+                         Source="Companys.xml"
+                         XPath="root/Company"/>
+
+        <HierarchicalDataTemplate DataType="Company"
+                                  ItemsSource="{Binding XPath=Dempartment}">
+            <TextBlock Text="{Binding XPath=@Name}"/>
+        </HierarchicalDataTemplate>
+
+        <HierarchicalDataTemplate DataType="Dempartment"
+                                  ItemsSource="{Binding XPath=Employee}">
+            <TextBlock Text="{Binding XPath=@Name }"/>
+        </HierarchicalDataTemplate>
+
+        <HierarchicalDataTemplate DataType="Employee">
+            <TextBlock Text="{Binding XPath=@Name}"/>
+        </HierarchicalDataTemplate>
+
+        <!--menu-->
+        <XmlDataProvider x:Key="xdp_menu"
+                         Source="MenuData.xml"
+                         XPath="Data/Operation"/>
+
+        <HierarchicalDataTemplate DataType="Operation"
+                                  ItemsSource="{Binding XPath=Operation}">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{Binding XPath=@Name}"
+                           Margin="10,0"/>
+                <TextBlock Text="{Binding XPath=@Gestrue}"/>
+            </StackPanel>
+        </HierarchicalDataTemplate>
+        
+        
+    </Application.Resources>
+    
+    
+    
+</Application>

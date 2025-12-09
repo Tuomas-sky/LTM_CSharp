@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Data>
+
+	<Operation Name="File" Gestrue="F">
+		<Operation Name="Create" Gestrue="N">
+			<Operation Name="Project" Gestrue="Ctrl+P"/>
+			<Operation Name="Website" Gestrue="Ctrl+W"/>
+			<Operation Name="Document" Gestrue="Ctrl+D"/>
+		</Operation>
+		<Operation Name="Save" Gestrue="S"/>
+		<Operation Name="Print" Gestrue="P"/>
+		<Operation Name="Exit" Gestrue="X"/>
+	</Operation>
+
+	<Operation Name="Edit" Gestrue="E">
+		<Operation Name="Copy" Gestrue="Ctrl+C"/>
+		<Operation Name="Clear" Gestrue="Ctrl+A"/>
+	</Operation>
+
+</Data>

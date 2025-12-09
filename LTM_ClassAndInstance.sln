@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Story_07_MVVM_Self_Comm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Story_08_TriggerAndStyle", "WPF_Story_08_TriggerAndStyle\WPF_Story_08_TriggerAndStyle.csproj", "{E97B164B-F663-4C92-8BBB-65759404EA6A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Story_08_Style_LevelDataTemplate", "WPF_Story_08_Style_LevelDataTemplate\WPF_Story_08_Style_LevelDataTemplate.csproj", "{5108F1A5-ADDF-494E-9F7F-A05CB75D1E22}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -201,6 +203,14 @@ Global
 		{E97B164B-F663-4C92-8BBB-65759404EA6A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E97B164B-F663-4C92-8BBB-65759404EA6A}.Release|x64.ActiveCfg = Release|Any CPU
 		{E97B164B-F663-4C92-8BBB-65759404EA6A}.Release|x64.Build.0 = Release|Any CPU
+		{5108F1A5-ADDF-494E-9F7F-A05CB75D1E22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5108F1A5-ADDF-494E-9F7F-A05CB75D1E22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5108F1A5-ADDF-494E-9F7F-A05CB75D1E22}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5108F1A5-ADDF-494E-9F7F-A05CB75D1E22}.Debug|x64.Build.0 = Debug|Any CPU
+		{5108F1A5-ADDF-494E-9F7F-A05CB75D1E22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5108F1A5-ADDF-494E-9F7F-A05CB75D1E22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5108F1A5-ADDF-494E-9F7F-A05CB75D1E22}.Release|x64.ActiveCfg = Release|Any CPU
+		{5108F1A5-ADDF-494E-9F7F-A05CB75D1E22}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
