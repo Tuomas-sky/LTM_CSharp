@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml;
 
 namespace WPF_Story_08_Style_LevelDataTemplate
 {
@@ -24,8 +25,6 @@ namespace WPF_Story_08_Style_LevelDataTemplate
         {
             InitializeComponent();
             //InitializeList();
-
-
         }
 
         private void InitializeList()
@@ -56,6 +55,13 @@ namespace WPF_Story_08_Style_LevelDataTemplate
             data.Add(company1);
             //this.treeView.ItemsSource=data;
 
+        }
+
+        private void StackPanel_Click(object sender, RoutedEventArgs e)
+        {
+            MenuItem mi=e.OriginalSource as MenuItem;
+            XmlElement xe = mi.Header as XmlElement;
+            MessageBox.Show(xe.Attributes["Name"].Value);
         }
     }
 }

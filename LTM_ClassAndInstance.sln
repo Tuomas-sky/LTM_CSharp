@@ -39,9 +39,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Story_06_Commands", "WP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Story_07_MVVM_Self_Command", "WPF_Story_07_MVVM_Self_Command\WPF_Story_07_MVVM_Self_Command.csproj", "{70735F14-5813-4325-AA51-E1CAA256E6B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Story_08_TriggerAndStyle", "WPF_Story_08_TriggerAndStyle\WPF_Story_08_TriggerAndStyle.csproj", "{E97B164B-F663-4C92-8BBB-65759404EA6A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Story_08_1_TriggerAndStyle", "WPF_Story_08_TriggerAndStyle\WPF_Story_08_1_TriggerAndStyle.csproj", "{E97B164B-F663-4C92-8BBB-65759404EA6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Story_08_Style_LevelDataTemplate", "WPF_Story_08_Style_LevelDataTemplate\WPF_Story_08_Style_LevelDataTemplate.csproj", "{5108F1A5-ADDF-494E-9F7F-A05CB75D1E22}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Story_08_2_Style_LevelDataTemplate", "WPF_Story_08_Style_LevelDataTemplate\WPF_Story_08_2_Style_LevelDataTemplate.csproj", "{5108F1A5-ADDF-494E-9F7F-A05CB75D1E22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Story_08_3_TemplateInternalAccess", "WPF_Story_08_3_TemplateInternalAccess\WPF_Story_08_3_TemplateInternalAccess.csproj", "{FA2DEF21-7006-4A48-B0BD-AFED7DDB8788}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -211,6 +213,14 @@ Global
 		{5108F1A5-ADDF-494E-9F7F-A05CB75D1E22}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5108F1A5-ADDF-494E-9F7F-A05CB75D1E22}.Release|x64.ActiveCfg = Release|Any CPU
 		{5108F1A5-ADDF-494E-9F7F-A05CB75D1E22}.Release|x64.Build.0 = Release|Any CPU
+		{FA2DEF21-7006-4A48-B0BD-AFED7DDB8788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA2DEF21-7006-4A48-B0BD-AFED7DDB8788}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA2DEF21-7006-4A48-B0BD-AFED7DDB8788}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FA2DEF21-7006-4A48-B0BD-AFED7DDB8788}.Debug|x64.Build.0 = Debug|Any CPU
+		{FA2DEF21-7006-4A48-B0BD-AFED7DDB8788}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA2DEF21-7006-4A48-B0BD-AFED7DDB8788}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA2DEF21-7006-4A48-B0BD-AFED7DDB8788}.Release|x64.ActiveCfg = Release|Any CPU
+		{FA2DEF21-7006-4A48-B0BD-AFED7DDB8788}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
